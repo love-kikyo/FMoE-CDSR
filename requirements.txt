@@ -1,0 +1,4 @@
+tqdm
+numpy==1.22.3 
+scipy
+torch==1.7.1
