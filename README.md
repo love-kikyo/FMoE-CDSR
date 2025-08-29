@@ -47,6 +47,8 @@ There are a few points to note:
 
 - The positional arguments `Food Kitchen Clothing Beauty` indicates training FMoE-CDSR in FKCB scenario. If you want to choose another scenario, you can change it to `Movies Books Games` (MBG) or `Sports Garden Home` (SGH).
 
+- The argument `--epochs` controls the maximum number of epochs the algorithm will run. For FKCB, the best value is `60`, while for MBG and SGH, the best value is `40`.
+
 - The argument `--anneal_cap` is used to control KL annealing for variantional method (including ours). For FKCB, `1.0` is the best; for MBG and SGH, `0.01` is the best.
 
 - The argument `--es_patience` is used to control how many epochs the algorithm will wait without seeing improvement in the monitored metric before early stop. For FKCB, `10` is the best; for MBG and SGH, `5` is the best.
